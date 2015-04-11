@@ -19,4 +19,4 @@
 
 # Ignore vendor files.
 /polymer-elements
-/node-modules
+/node_modules
