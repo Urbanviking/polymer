@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
@@ -9,66 +10,12 @@
   <title>App with Polymer</title>
   <script src="polymer-elements/webcomponentsjs/webcomponents.min.js"></script>
   <link rel="import" href="polymer-elements/polymer/polymer.html">
-  <link rel="import" href="polymer-elements/core-drawer-panel/core-drawer-panel.html">
-  <link rel="import" href="polymer-elements/core-header-panel/core-header-panel.html">
-  <link rel="import" href="polymer-elements/core-icon-button/core-icon-button.html">
-  <link rel="import" href="polymer-elements/core-icon/core-icon.html">
-  <link rel="import" href="polymer-elements/core-image/core-image.html">
-  <link rel="import" href="polymer-elements/core-item/core-item.html">
-  <link rel="import" href="polymer-elements/core-list/core-list.html">
-  <link rel="import" href="polymer-elements/core-menu/core-menu.html">
-  <link rel="import" href="polymer-elements/core-scroll-header-panel/core-scroll-header-panel.html">
-  <link rel="import" href="polymer-elements/core-toolbar/core-toolbar.html">
-  <link rel="import" href="polymer-elements/paper-dialog/paper-dialog.html">
-  <link rel="import" href="polymer-elements/paper-dropdown/paper-dropdown.html">
-  <link rel="import" href="polymer-elements/paper-dropdown-menu/paper-dropdown-menu.html">
-  <link rel="import" href="polymer-elements/paper-fab/paper-fab.html">
-  <link rel="import" href="polymer-elements/paper-icon-button/paper-icon-button.html">
-  <link rel="import" href="polymer-elements/paper-item/paper-item.html">
-  <link rel="import" href="polymer-elements/paper-menu-button/paper-menu-button.html">
-  <link rel="import" href="polymer-elements/paper-shadow/paper-shadow.html">
-  <link rel="import" href="polymer-elements/paper-toast/paper-toast.html">
   <link rel="import" href="polymer-elements/font-roboto/roboto.html">
-  <link rel="import" href="components/users/users-card.html">
+  <link rel="import" href="components/sidebar/sidebar-card.html">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
   <link rel="stylesheet" href="index.css">
 </head>
 <body fuldbleed vertical layout unresolved>
-
-  <core-drawer-panel responsiveWidth="99999px" forceNarrow>
-    <core-header-panel drawer>
-      <core-toolbar id="toolbarDrawer">
-        <span>{{app}}</span>
-      </core-toolbar>
-      <core-menu id="menu" selected="0">
-        <paper-shadow>
-          <paper-item id="menuItem" noink>
-            <a href="#">Discover</a>
-          </paper-item>
-          <paper-item id="menuItem" noink>
-            <a href="#">Sign Up</a>
-          </paper-item>
-          <paper-item id="menuItem" noink>
-            <a href="#">Log In</a>
-          </paper-item>
-          <paper-item id="menuItem" noink>
-            <a href="#">Log Out</a>
-          </paper-item>
-        </paper-shadow>
-      </core-menu>
-    </core-header-panel>
-    <core-scroll-header-panel main condenses keepCondensedHeader condensedHeaderHeight="65">
-      <core-toolbar id="toolbarMain">
-        <span>{{app}}</span>
-        <paper-icon-button
-          icon="menu" core-drawer-toggle></paper-icon-button>
-        <span flex></span>
-      </core-toolbar>
-      <div vertical layout center>
-        <users-card show="all"></users-card>
-      </div>
-    </core-scroll-header-panel>
-  </core-drawer-panel>
-
+  <sidebar-card><sidebar-bar>
 </body>
 </html>
