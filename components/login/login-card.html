@@ -1,0 +1,23 @@
+<link rel="import" href="../../polymer-elements/polymer/polymer.html">
+<link rel="import" href="google-signin.html">
+<link rel="import" href="google-signin-aware.html">
+
+<polymer-element name="login-card">
+  <template>
+    <style>
+    :host {
+      background-color: red;
+      display: block;
+      position: relative;
+      width: 100%;
+    }
+    </style>
+    <section>
+      <google-signin theme="dark"
+                     clientId="737666930694-rdt0c09bu374idsjo0mqdkuugsnhlru6.apps.googleusercontent.com"
+                     scopes="https://www.googleapis.com/auth/drive">
+      </google-signin>
+    </section>
+  </template>
+  <script>Polymer({});</script>
+</polymer-element>
